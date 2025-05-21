@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Authentication Mockup</title>
+  <style>
+    body { font-family: Arial; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f4f4f4; }
+    .auth-container { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 300px; }
+    input { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 5px; }
+    button { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: #0056b3; }
+    #message { margin-top: 10px; color: red; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="auth-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="message"></p>
+    <hr/>
+    <h2>Signup</h2>
+    <input type="text" id="newUsername" placeholder="New Username" />
+    <input type="password" id="newPassword" placeholder="New Password" />
+    <button onclick="signup()">Signup</button>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>
